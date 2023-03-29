@@ -1,0 +1,125 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+body{
+    background-color: #141414;
+    color: #ffffff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.flex-container{
+    display: flex;
+    overflow: auto;
+
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.main-container
+{
+    position: relative;
+    transition: transform 0.2s;
+    padding: 15px;
+
+}
+
+.main-container:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    padding: 15px;
+}
+
+img {
+    width: 180px;
+    height: 250px;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    width: 66.9%;
+    transition: 0.5s ease;
+    opacity: 0;
+    bottom: 0;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.main-container:hover .overlay{
+    opacity: 1;
+}
+
+.movie-poster{
+    padding: 20px;
+    width : 450px;
+    height: 600px;
+}
+
+.movie-details{
+    margin : 45px 15px;
+    padding: 0 35px;
+    font-size: 14px;
+    color:#F5F5F5
+}
+
+.movie-details .title{
+    font-size: 39px;
+    margin: 0px;
+    color: #ffffff;
+}
+
+
+.movie-details .genre
+{
+    align-items: flex-start;
+    flex :50%
+}
+
+.movie-details .year
+{
+    align-items: flex-end;
+    margin-right: 45px;
+}
+
+.plot{
+    font-size: 18px;
+    padding-top: 35px ;
+}
+
+.type
+{
+    flex: 15%;
+    justify-content: left;
+}
+.list
+{
+    flex: 100%;
+    justify-content: right;
+}
+
+.search
+{
+    background-color:#141414;
+
+}
+
+.text-field
+{
+    background-color:#808080;
+    color: white;
+    padding: 8px;
+    border: none;
+    margin: 8px 16px 8px 16px;
+    font-size: 17px;
+    align-items: center;
+    width: 98%;
+    justify-items: center;
+    border-radius: 10px;
+
+}
+::-webkit-input-placeholder {color: white;}
